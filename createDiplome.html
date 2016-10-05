@@ -43,7 +43,7 @@
 				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Actions <span class="caret"></span></a>
 				          <ul class="dropdown-menu">
 				            <li><a href="#">Mon Profil</a></li>
-				            <li><a href="#">Créer un profil</a></li>
+				            <li><a href="./createProfil.html">Créer un profil</a></li>
 				            <li><a href="./createDiplome.html">Créer un diplôme</a></li>
 				          </ul>
 				        </li>
@@ -66,50 +66,20 @@
 					<div class="col-md-4">
 					</div>
 					<div class="col-md-4 well well-lg">
-						<h1 style="text-align: center">Créer un profil</h1>
 						<form>
 						  <div class="form-group">
-						    <label for="prenom">Prenom</label>
-						    <input type="texte" class="form-control" id="prenom" placeholder="Prenom">
+						    <label for="date">année d'ôbtention</label>
+						    <input type="year" class="form-control" id="date" placeholder="Année d'obtention">
 						  </div>
 						  <div class="form-group">
-						    <label for="nom">Nom</label>
-						    <input type="texte" class="form-control" id="nom" placeholder="NOM">
+						    <label for="diplome">Intitulié du diplome</label>
+						    <input type="texte" class="form-control" id="diplome" placeholder="intitulé">
 						  </div>
 						  <div class="form-group">
-						    <label for="filiaire">Filiaire</label>
-						    <input type="texte" class="form-control" id="filiaire" placeholder="Filiaire">
+						    <label for="lieu">Lieu d'obtention</label>
+						    <input type="texte" class="form-control" id="lieu" placeholder="Lieu">
 						  </div>
-						  <div class="form-group">
-						    <label for="ville">Ville</label>
-						    <input type="texte" class="form-control" id="ville" placeholder="Ville">
-						  </div>
-						  <div class="form-group">
-						    <label for="Telephone">Telephone</label>
-						    <input type="tel" class="form-control" id="telephone" placeholder="Telephone">
-						  </div>
-						  <div class="form-group">
-						    <label for="dob">Date de naissance</label>
-						    <input type="date" class="form-control" id="dob" placeholder="dob">
-						  </div>
-						  <div class="form-group">
-						    <label for="mail">E-mail</label>
-						    <input type="mail" class="form-control" id="mail" placeholder="mail@mail.fr">
-						  </div>
-						  <div class="form-group">
-						    <label for="mdp">Mot de passe</label>
-						    <input type="password" class="form-control" id="mdp" placeholder="Password">
-						  </div>
-						  <div class="form-group">
-						    <label for="mdpc">Confirmer le mot de passe</label>
-						    <input type="password" class="form-control" id="mdpc" placeholder="Password">
-						  </div>
-						  <div class="form-group">
-						    <label for="imgProfil">Image de profil</label>
-						    <input type="file" id="imgProfil">
-						    <p class="help-block">Veuillez choisir une image de profil</p>
-						  </div>
-						  <button type="submit" class="btn btn-default">Créer un profil</button>
+						  <button type="submit" class="btn btn-default">Ajouter un diplome</button>
 						</form>
 					</div>
 					<div class="col-md-4">
