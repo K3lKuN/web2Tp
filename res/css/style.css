@@ -2,3 +2,12 @@
 .col-md-4{
 	margin-left: 5px;
 }
+
+
+
+@media all and (max-device-width: 720px)
+{
+    .col-xs-12{
+		font-size: 14pt;
+	}
+}
