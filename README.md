@@ -1,4 +1,4 @@
-# TP1 Web 2.0
+# TP Web 2.0
 
 Pour la maquette
 
