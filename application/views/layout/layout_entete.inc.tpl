@@ -5,7 +5,7 @@
 		<title>Master Link</title>
 
 		<!-- Jquery -->
-		<script src="./res/js/jquery.js"></script>
+		<script src="{base_url('res/js/JQuery.js')}"></script>
 		<!-- Mon fichier CSS -->
 		<link rel="stylesheet" href="./res/css/style.css">
 

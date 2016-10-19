@@ -17,6 +17,16 @@ class cAccount extends CI_Controller {
 		$this->load->view('vCreateProfil');
 	}
 
+	public function profil(){
+		if($this->session->userdata('logged')){
+			$data['logged'] = $this->session->userdata('logged');
+			$this->load->view('vProfil', $data);
+		}
+		else{
+			$this->load->view('vIndex');
+		}
+	}
+
 	function login(){
 		$dataLog = array('login'=> 'log', 'logged'=>true);
 	    $this->session->set_userdata('login', 'test');

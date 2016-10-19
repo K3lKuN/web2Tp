@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.15, created on 2016-10-19 13:15:48
+<?php /* Smarty version Smarty-3.1.15, created on 2016-10-19 15:11:02
          compiled from "application\views\vIndex.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1316352acee6525a471-02750130%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '28729d03339e86de440410e3f563e2a15db0333c' => 
     array (
       0 => 'application\\views\\vIndex.tpl',
-      1 => 1476882945,
+      1 => 1476889834,
       2 => 'file',
     ),
   ),
@@ -31,10 +31,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		</header>
 		<article>
 			
+				<script type="text/javascript" src="<?php echo base_url('res/js/filtre.js');?>
+"></script>
 				<div class="col-md-1">
 				</div>
 				<div class="col-md-10 table-responsive">
-					<table class="table table-striped">
+					<table class="table table-striped" id="myTable">
 						<thead>
 							<tr>
 								<th>Prenom</th>

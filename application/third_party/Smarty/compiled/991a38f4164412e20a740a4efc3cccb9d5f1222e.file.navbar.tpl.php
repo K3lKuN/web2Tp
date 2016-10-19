@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.15, created on 2016-10-19 13:13:36
+<?php /* Smarty version Smarty-3.1.15, created on 2016-10-19 15:11:02
          compiled from "D:\dev\web\wamp64\www\web2\application\views\Layout\navbar.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1133558076903c57af2-05045323%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '991a38f4164412e20a740a4efc3cccb9d5f1222e' => 
     array (
       0 => 'D:\\dev\\web\\wamp64\\www\\web2\\application\\views\\Layout\\navbar.tpl',
-      1 => 1476882813,
+      1 => 1476889793,
       2 => 'file',
     ),
   ),
@@ -43,18 +43,19 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 				<li><a href="<?php echo site_url('Welcome');?>
 ">Accueil</a></li>
 				<?php if (isset($_smarty_tpl->tpl_vars['logged']->value)&&$_smarty_tpl->tpl_vars['logged']->value==true) {?>
-					<li><a href="./profil.html">Mon Profil</a></li>
-				    <li><a href="./createDiplome.html">Créer un diplôme</a></li>
+					<li><a href="<?php echo site_url('cAccount/profil');?>
+">Mon Profil</a></li>
+				    <li><a href="<?php echo site_url('cDiplome/createDiplome');?>
+">Créer un diplôme</a></li>
 				<?php } else { ?>
 					<li><a href="<?php echo site_url('cAccount/createProfil');?>
 ">Créer son profil</a></li>
 				<?php }?>
 			</ul>
 			<form class="navbar-form navbar-left">
-				<div class="form-group">
-					<input type="text" class="form-control" placeholder="Search">
+				<div class="form-group" class="input-filter-container">
+					<input type="text" id="InputSearch" onkeyup="filtreTable()" class="form-control" placeholder="Recherche">
 				</div>
-				<button type="submit" class="btn btn-default">Chercher un étudiant</button>
 			</form>
 			<ul class="nav navbar-nav navbar-right">
 				<?php if (isset($_smarty_tpl->tpl_vars['logged']->value)&&$_smarty_tpl->tpl_vars['logged']->value==true) {?>

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.15, created on 2016-10-19 12:35:15
+<?php /* Smarty version Smarty-3.1.15, created on 2016-10-19 14:39:39
          compiled from "D:\dev\web\wamp64\www\web2\application\views\Layout\layout_entete.inc.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:3171758076883d75427-38298182%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '87d14fc88b59ab2f6cd5080c1898366a7c0cf2b3' => 
     array (
       0 => 'D:\\dev\\web\\wamp64\\www\\web2\\application\\views\\Layout\\layout_entete.inc.tpl',
-      1 => 1476880470,
+      1 => 1476887977,
       2 => 'file',
     ),
   ),
@@ -15,9 +15,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.15',
   'unifunc' => 'content_58076883d77575_29110394',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_58076883d77575_29110394')) {function content_58076883d77575_29110394($_smarty_tpl) {?><!doctype html>
 <html lang="fr">
@@ -26,7 +26,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<title>Master Link</title>
 
 		<!-- Jquery -->
-		<script src="./res/js/jquery.js"></script>
+		<script src="<?php echo base_url('res/js/JQuery.js');?>
+"></script>
 		<!-- Mon fichier CSS -->
 		<link rel="stylesheet" href="./res/css/style.css">
 

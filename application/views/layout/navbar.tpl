@@ -16,17 +16,16 @@
 			<ul class="nav navbar-nav">
 				<li><a href="{site_url('Welcome')}">Accueil</a></li>
 				{if isset($logged) && $logged == true}
-					<li><a href="./profil.html">Mon Profil</a></li>
-				    <li><a href="./createDiplome.html">Créer un diplôme</a></li>
+					<li><a href="{site_url('cAccount/profil')}">Mon Profil</a></li>
+				    <li><a href="{site_url('cDiplome/createDiplome')}">Créer un diplôme</a></li>
 				{else}
 					<li><a href="{site_url('cAccount/createProfil')}">Créer son profil</a></li>
 				{/if}
 			</ul>
 			<form class="navbar-form navbar-left">
-				<div class="form-group">
-					<input type="text" class="form-control" placeholder="Search">
+				<div class="form-group" class="input-filter-container">
+					<input type="text" id="InputSearch" onkeyup="filtreTable()" class="form-control" placeholder="Recherche">
 				</div>
-				<button type="submit" class="btn btn-default">Chercher un étudiant</button>
 			</form>
 			<ul class="nav navbar-nav navbar-right">
 				{if isset($logged) && $logged == true}
