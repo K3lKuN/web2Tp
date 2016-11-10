@@ -8,14 +8,14 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="./toto">Master Link</a>
+			<a class="navbar-brand" href=".">Master Link</a>
 		</div>
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
-				<li><a href="./toto">Accueil</a></li>
-					<li><a href="{site_url('cAccount/profil')}">Mon Profil</a></li>
+				<li><a href=<c:url value="."/>>Accueil</a></li>
+					<li><a href="profil">Mon Profil</a></li>
 				    <li><a href="{site_url('cDiplome/createDiplome')}">Créer un diplôme</a></li>
 					<li><a href="{site_url('cAccount/createProfil')}">Créer son profil</a></li>
 			</ul>

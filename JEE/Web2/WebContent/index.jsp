@@ -1,9 +1,8 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@include file="layout/header.jsp"%>
 	<body>
 		<header>
 			<div class="col-md-12">
-				<%@include file="layout/navbar.jsp" %>
+				<%@include file="WEB-INF/jsp/navbar.jsp" %>
 			</div>
 		</header>
 		<article>				

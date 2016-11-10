@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-public class Profil extends HttpServlet {
+public class Profil {
 	
 	/*public void doGet( HttpServletRequest request, HttpServletResponse response )	throws ServletException, IOException {
 		this.getServletContext().getRequestDispatcher( "/WEB-INF/index.jsp" ).forward( request, response );
